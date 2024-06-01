@@ -3,7 +3,7 @@ import { Document } from "mongoose";
 
 export type CartoonDocument = Cartoon & Document;
 
-@Schema()
+@Schema({ timestamps: true })
 export class Cartoon {
 
     @Prop()
